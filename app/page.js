@@ -1,8 +1,15 @@
+import Hero from "@/components/Hero";
+import Companies from "@/components/Companies";
+import Services from "@/components/Services";
+import ContactCard from "@/components/ContactCard";
+
 export default function Home() {
   return (
-    <div className="text-6xl ">
-      <p className="font-space-grotesk font-medium">Positivus</p>
-      <p className="font-sans font-medium">Positivus</p>
+    <div cl>
+      <Hero />
+      <Companies />
+      <Services />
+      <ContactCard />
     </div>
   );
 }

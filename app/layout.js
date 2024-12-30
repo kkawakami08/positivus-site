@@ -1,5 +1,6 @@
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -14,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={spaceGrotesk.className}>
-      <body className="bg-brand-gray text-brand-black">{children}</body>
+      <body className=" text-brand-black">
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
