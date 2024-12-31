@@ -3,7 +3,7 @@ import Link from "next/link";
 const CircleButton = ({ path, bgColor }) => {
   return (
     <div
-      className={`${bgColor} rounded-full w-10 h-10 flex items-center justify-center p-3 place-self-end`}
+      className={`${bgColor} rounded-full w-10 h-10 flex items-center justify-center p-3 `}
     >
       <Link href={path}>
         <svg

@@ -20,7 +20,7 @@ const Companies = () => {
   const imgClassName = "w-20 aria-hidden";
 
   return (
-    <div className="grid grid-cols-3 justify-items-center py-10 space-y-2 items-center ">
+    <div className="grid grid-cols-3 lg:flex lg:justify-between justify-items-center py-10 space-y-2 items-center ">
       {companyArray.map((company, idx) => (
         <Image
           key={`${company.alt}-${idx}`}

@@ -15,8 +15,9 @@ const ServiceCard = ({ service, index }) => {
         lineTwo={service.lineTwo}
         bgColor={index % 2 === 0 ? "bg-brand-green" : "bg-white"}
       />
-      <div className="row-start-2 flex ">
+      <div className="row-start-2   place-self-end flex w-full md:col-span-2 md:items-center gap-3">
         <CircleButton path="/services" bgColor={"bg-brand-black"} />
+        <p className="hidden lg:block">Learn More</p>
       </div>
       <Image
         src={service.imgSrc}

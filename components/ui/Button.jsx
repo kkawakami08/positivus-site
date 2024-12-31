@@ -6,7 +6,9 @@ const Button = ({ text, path, bgColor }) => {
 
   return (
     <Link
-      className={` w-full text-center py-5 rounded-lg ${textColor} ${bgColor} `}
+      className={` px-5 text-center py-3 rounded-lg ${textColor} ${bgColor} ${
+        bgColor == "bg-white" && "border-brand-black border"
+      } flex items-center justify-center`}
       href={path}
     >
       {text}
