@@ -1,5 +1,5 @@
 import MinorLabel from "./ui/MinorLabel";
-import CircleButton from "./ui/CircleButton";
+import CircleArrowButton from "./ui/CircleArrowButton";
 
 import Image from "next/image";
 
@@ -16,7 +16,7 @@ const ServiceCard = ({ service, index }) => {
         bgColor={index % 2 === 0 ? "bg-brand-green" : "bg-white"}
       />
       <div className="row-start-2   place-self-end flex w-full md:col-span-2 md:items-center gap-3">
-        <CircleButton path="/services" bgColor={"bg-brand-black"} />
+        <CircleArrowButton path="/services" bgColor={"bg-brand-black"} />
         <p className="hidden lg:block">Learn More</p>
       </div>
       <Image
@@ -25,7 +25,7 @@ const ServiceCard = ({ service, index }) => {
         width="0"
         height="0"
         sizes="100vw"
-        className="row-start-2 col-span-2 col-start-3 "
+        className="row-start-2 col-span-2 col-start-3 place-self-end"
       />
     </div>
   );

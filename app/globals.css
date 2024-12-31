@@ -14,13 +14,13 @@
 }
 
 .h3-mobile {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem;
   font-weight: 700;
 }
 
 .h4-mobile {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem;
   font-weight: 700;
 }

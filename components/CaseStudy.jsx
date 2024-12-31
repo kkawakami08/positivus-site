@@ -1,11 +1,14 @@
 import Link from "next/link";
 
-const CircleButton = ({ path, bgColor }) => {
+const CaseStudy = ({ text }) => {
   return (
-    <div
-      className={`${bgColor} rounded-full w-10 h-10 flex items-center justify-center p-3 `}
-    >
-      <Link href={path}>
+    <>
+      <p className="font-light pb-5">{text}</p>
+      <Link
+        href="/use-cases"
+        className="flex items-center gap-3 text-brand-green font-light"
+      >
+        Learn More{" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -21,8 +24,8 @@ const CircleButton = ({ path, bgColor }) => {
           />
         </svg>
       </Link>
-    </div>
+    </>
   );
 };
 
-export default CircleButton;
+export default CaseStudy;

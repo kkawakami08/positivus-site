@@ -8,7 +8,7 @@ import { navLinks } from "@/constants/navigation";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 bg-white py-5  flex w-full justify-between">
+    <nav className="sticky top-0 bg-white py-5  flex w-full justify-between px-5 lg:px-20 drop-shadow-sm">
       <div className="flex gap-3 mr-5 items-center">
         <Image src={logo} alt="logo" width={20} />
         <h1 className="text-2xl font-semibold">Positivus</h1>
