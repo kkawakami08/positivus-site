@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import ContactCard from "@/components/ContactCard";
 import CaseStudies from "@/components/CaseStudies";
 import WorkingProcess from "@/components/WorkingProcess";
+import Team from "@/components/Team";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ContactCard />
       <CaseStudies />
       <WorkingProcess />
+      <Team />
     </div>
   );
 }
