@@ -2,7 +2,7 @@
 import { useState } from "react";
 import CirclePlusButton from "./ui/CirclePlusButton";
 
-const DropDown = ({ process, index }) => {
+const DropDown = ({ process, index, faq }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -13,7 +13,7 @@ const DropDown = ({ process, index }) => {
       onClick={() => setIsOpen((prev) => !prev)}
     >
       <div className="flex  items-center gap-5 py-7">
-        <p className="text-2xl font-semibold">0{index + 1}</p>
+        {!faq && <p className="text-2xl font-semibold">0{index + 1}</p>}
         <p className="font-semibold text-lg">{process.title}</p>
         <CirclePlusButton
           isOpen={isOpen}
