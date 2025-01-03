@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="lg:max-w-5xl md:mx-auto bg-brand-black text-white grid grid-cols-1 lg:grid-cols-6 justify-items-center gap-10 py-10 px-5 mt-20 lg:rounded-t-3xl lg:px-10">
+    <div className="lg:max-w-5xl md:mx-auto bg-brand-black text-white grid grid-cols-1 lg:grid-cols-6 justify-items-center gap-10 py-10 px-5 mt-20 lg:rounded-t-3xl lg:px-10 ">
       <div className="flex items-center gap-2 lg:place-self-start ">
         <Image
           src={logo}
@@ -30,19 +30,10 @@ const Footer = () => {
       </div>
       <ul className="font-extralight flex flex-col items-center gap-3 lg:flex-row lg:col-span-4 lg:gap-10 ">
         <li>
-          <Link href="/about">About us</Link>
-        </li>
-        <li>
-          <Link href="/services">Services</Link>
-        </li>
-        <li>
-          <Link href="/use-cases">Use Cases</Link>
-        </li>
-        <li>
           <Link href="/pricing">Pricing</Link>
         </li>
         <li>
-          <Link href="/blog">Blog</Link>
+          <Link href="/contact">Contact Us</Link>
         </li>
       </ul>
       <div className="flex flex-col items-center gap-10 lg:items-start lg:col-span-2">
@@ -92,6 +83,7 @@ const Footer = () => {
       <ul className="flex gap-5 lg:col-start-6 lg:row-start-1 lg:place-self-end lg:self-start">
         <li className="bg-brand-gray w-7 h-7 rounded-full flex items-center justify-center">
           <a
+            target="_blank"
             href="https://www.linkedin.com/in/k-kawakami/
             "
           >
@@ -101,6 +93,7 @@ const Footer = () => {
         </li>
         <li className="bg-brand-gray w-7 h-7 rounded-full flex items-center justify-center">
           <a
+            target="_blank"
             href="https://github.com/kkawakami08/
 
             "

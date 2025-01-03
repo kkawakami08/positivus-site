@@ -16,7 +16,7 @@ const ServiceCard = ({ service, index }) => {
         bgColor={index % 2 === 0 ? "bg-brand-green" : "bg-white"}
       />
       <div className="row-start-2   place-self-end flex w-full md:col-span-2 md:items-center gap-3">
-        <CircleArrowButton path="/services" bgColor={"bg-brand-black"} />
+        <CircleArrowButton path="/contact" bgColor={"bg-brand-black"} />
         <p className="hidden lg:block">Learn More</p>
       </div>
       <Image

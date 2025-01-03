@@ -5,7 +5,7 @@ const CaseStudy = ({ text }) => {
     <>
       <p className="font-light pb-5">{text}</p>
       <Link
-        href="/use-cases"
+        href="/contact"
         className="flex items-center gap-3 text-brand-green font-light"
       >
         Learn More{" "}
