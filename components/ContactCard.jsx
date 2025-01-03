@@ -4,7 +4,7 @@ import Button from "./ui/Button";
 
 const ContactCard = () => {
   return (
-    <div className="mx-4 lg:mx-20 bg-brand-gray p-10 rounded-3xl md:flex md:justify-around ">
+    <div className="mx-4 lg:mx-0 bg-brand-gray p-10 rounded-3xl md:flex md:justify-around ">
       <div className="flex flex-col gap-5 md:w-1/2 ">
         <h4 className="h4-mobile md:text-center">Let's make things happen</h4>
         <p className=" md:text-center">

@@ -4,7 +4,7 @@ import { services } from "@/constants/services";
 
 const Services = () => {
   return (
-    <div className="px-4 lg:px-20  grid grid-cols-1 md:grid-cols-2 gap-5 justify-items-center ">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 justify-items-center px-4 lg:px-0">
       <div className="flex flex-col items-center gap-5 py-3 sm:flex-row justify-center  sm:col-span-2 sm:max-w-xl md:max-w-2xl">
         <MainLabel text="Services" bgColor="bg-brand-green" />
         <p className="text-center sm:text-left">

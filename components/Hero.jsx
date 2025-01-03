@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className=" px-4   grid grid-cols-1 justify-items-center items-center md:grid-cols-5   md:max-w-3xl  gap-5">
-      <h2 className="h2-mobile md:h2-desktop md:col-span-2 text-center md:text-left">
+    <div className=" px-4   grid grid-cols-1 justify-items-center items-center md:grid-cols-5   md:max-w-4xl  ">
+      <h2 className="h2-mobile md:h2-desktop md:col-span-2 text-center md:text-left lg:place-self-end">
         Navigating the digital landscape for success
       </h2>
       <Image
