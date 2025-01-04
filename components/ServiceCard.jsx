@@ -1,6 +1,6 @@
 import MinorLabel from "./ui/MinorLabel";
 import CircleArrowButton from "./ui/CircleArrowButton";
-
+import Link from "next/link";
 import Image from "next/image";
 
 const ServiceCard = ({ service, index }) => {
@@ -15,10 +15,13 @@ const ServiceCard = ({ service, index }) => {
         lineTwo={service.lineTwo}
         bgColor={index % 2 === 0 ? "bg-brand-green" : "bg-white"}
       />
-      <div className="row-start-2   place-self-end flex w-full md:col-span-2 md:items-center gap-3">
+      <Link
+        href="/contact"
+        className="row-start-2   place-self-end flex w-full md:col-span-2 md:items-center gap-3"
+      >
         <CircleArrowButton path="/pricing" bgColor={"bg-brand-black"} />
         <p className="hidden lg:block">Learn More</p>
-      </div>
+      </Link>
       <Image
         src={service.imgSrc}
         alt={`${service.lineOne} ${service.lineTwo}`}
