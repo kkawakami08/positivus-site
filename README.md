@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Positivus Landing Page
 
-## Getting Started
+A modern, responsive landing page built with Next.js, React, and Tailwind CSS, based on the [Positivus Landing Page Design from Figma community](<https://www.figma.com/design/BS4YicT5CVtdxlMzwssvpm/Positivus-Landing-Page-Design-(Community)-(Copy)?m=auto&t=ofHj0R625SQ7CeoO-6>).
 
-First, run the development server:
+## 🌐 Live Site
+
+Visit the live website: [Positivus Landing Page](https://positivus-site-phi.vercel.app/)
+
+## 📌 Features
+
+- Pixel-perfect implementation of the Positivus design
+- Fully responsive layout for all device sizes
+- Modern tech stack utilizing Next.js and React
+- Optimized performance with Tailwind CSS
+- Clean, maintainable code structure
+
+## 🛠️ Technologies Used
+
+- **Frontend Framework**: Next.js
+- **UI Library**: React
+- **Styling**: Tailwind CSS
+- **Language**: JavaScript
+- **Version Control**: Git
+- **Deployment**: Vercel
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+- Git
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone [your-repository-url]
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd [project-directory]
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🎨 Design Implementation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is based on the [Positivus Landing Page Design](<https://www.figma.com/design/BS4YicT5CVtdxlMzwssvpm/Positivus-Landing-Page-Design-(Community)-(Copy)>) from Figma community. The implementation includes:
 
-## Learn More
+- Exact color scheme matching
+- Precise component layouts
+- Responsive design adaptations
+- Faithful typography matching
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 Responsive Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website is fully responsive and optimized for:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Desktop screens
+- Tablets
+- Mobile devices
 
-## Deploy on Vercel
+## 🔄 Development Workflow
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Make changes and commit with descriptive messages
+2. Push changes to GitHub
+3. Create Pull Request for review
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📦 Deployment
+
+This project is deployed on Vercel. The deployment process is automated through Git integration:
+
+1. Push changes to the main branch
+2. Vercel automatically builds and deploys the updates
+3. Live site is updated with new changes
+
+## 🙏 Acknowledgments
+
+- Original design from Figma Community
+- Next.js team for the amazing framework
+- Tailwind CSS team for the utility-first CSS framework
+
+## 📞 Contact
+
+[Linked In](https://www.linkedin.com/in/k-kawakami/)
+[Portfolio](https://kaori.dev)
