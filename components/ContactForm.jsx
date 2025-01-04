@@ -57,11 +57,11 @@ const ContactForm = () => {
             name="contact-method"
             type="radio"
             onChange={(e) => setCheckedValue(e.target.id)}
-            className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-brand-green checked:border-brand-gray checked:bg-brand-light-gray focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden"
+            className="cursor-pointer relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-brand-green checked:border-brand-gray checked:bg-brand-light-gray focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden"
           />
           <label
             htmlFor="basic-contact"
-            className="ml-3 block text-sm/6 font-medium text-gray-900"
+            className="cursor-pointer  ml-3 block text-sm/6 font-medium text-gray-900"
           >
             Say Hi
           </label>
@@ -73,11 +73,11 @@ const ContactForm = () => {
             name="contact-method"
             type="radio"
             onChange={(e) => setCheckedValue(e.target.id)}
-            className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-brand-green checked:border-brand-gray checked:bg-brand-light-gray focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden"
+            className="cursor-pointer relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-brand-green checked:border-brand-gray checked:bg-brand-light-gray focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden"
           />
           <label
             htmlFor="quote-contact"
-            className="ml-3 block text-sm/6 font-medium text-gray-900"
+            className="cursor-pointer ml-3 block text-sm/6 font-medium text-gray-900"
           >
             Get a Quote
           </label>
@@ -114,7 +114,7 @@ const ContactForm = () => {
       />
       <button
         type="submit"
-        className="bg-brand-black text-white font-medium text-lg text-center px-7 py-5 rounded-xl flex items-center justify-center w-full lg:h-fit"
+        className="bg-brand-black text-white font-medium text-lg text-center px-7 py-5 rounded-xl flex items-center justify-center w-full lg:h-fit hover:bg-brand-green hover:text-brand-black"
       >
         Send Message
       </button>

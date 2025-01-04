@@ -7,7 +7,7 @@ const DropDown = ({ process, index, faq }) => {
 
   return (
     <div
-      className={`grid divide-y  divide-brand-black px-7    border-brand-black border rounded-3xl shadow-[0px_5px_0px_0px_rgba(0,_0,_0,_0.8)] ${
+      className={`cursor-pointer grid divide-y  divide-brand-black px-7    border-brand-black border rounded-3xl shadow-[0px_5px_0px_0px_rgba(0,_0,_0,_0.8)] ${
         isOpen ? "bg-brand-green" : "bg-brand-gray"
       }`}
       onClick={() => setIsOpen((prev) => !prev)}

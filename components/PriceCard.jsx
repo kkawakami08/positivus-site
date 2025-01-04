@@ -25,10 +25,10 @@ const PriceCard = ({ price, index }) => {
       <div className="flex flex-col gap-5">
         <Link
           href="/contact"
-          className={`text-lg  py-5 tracking-wider rounded-xl flex items-center justify-center font-medium ${
+          className={` text-lg  py-5 tracking-wider rounded-xl flex items-center justify-center font-medium ${
             index == 1
-              ? "bg-brand-green text-black"
-              : "bg-brand-black text-white"
+              ? "bg-brand-green text-black hover:bg-white hover:text-brand-black"
+              : "bg-brand-black text-white hover:bg-brand-green hover:text-brand-black"
           }`}
         >
           Get Started
@@ -37,8 +37,8 @@ const PriceCard = ({ price, index }) => {
           href="/contact"
           className={`text-lg border-2 ${
             index == 1
-              ? "border-white text-white font-normal"
-              : "border-brand-black"
+              ? "border-white text-white font-normal hover:bg-white hover:text-brand-black"
+              : "border-brand-black hover:bg-brand-green hover:border-white"
           } text-brand-black font-semibold py-5 tracking-wider rounded-xl flex items-center justify-center`}
         >
           Request a quote
