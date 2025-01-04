@@ -86,8 +86,9 @@ const ContactForm = () => {
 
       <input
         id="name"
+        autoComplete="name"
         name="name"
-        type="name"
+        type="text"
         placeholder="Name"
         className="block w-full rounded-xl bg-white px-5 py-3 text-base text-brand-black outline outline-1 -outline-offset-1 outline-brand-blackf font-extralight placeholder:text-brand-light-gray focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 lg:h-fit"
         onChange={(e) => setName(e.target.value)}
@@ -96,6 +97,7 @@ const ContactForm = () => {
       <input
         required
         id="email"
+        autoComplete="email"
         name="email"
         type="email"
         placeholder="Email*"
@@ -105,6 +107,7 @@ const ContactForm = () => {
       />
       <textarea
         required
+        autoComplete="off"
         id="message"
         name="message"
         placeholder="Message*"
