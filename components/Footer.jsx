@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <div className="lg:max-w-5xl md:mx-auto bg-brand-black text-white grid grid-cols-1 lg:grid-cols-6 justify-items-center gap-10 py-10 px-5 mt-20 lg:rounded-t-3xl lg:px-10 ">
-      <div className="flex items-center gap-2 lg:place-self-start ">
+      <Link href="/" className="flex items-center gap-2 lg:place-self-start ">
         <Image
           src={logo}
           alt="positivus logo"
@@ -27,7 +27,7 @@ const Footer = () => {
           className="invert w-5 "
         />
         <p className="text-2xl ">Positivus</p>
-      </div>
+      </Link>
       <ul className="font-extralight flex flex-col items-center gap-3 lg:flex-row lg:col-span-4 lg:gap-10 ">
         <li>
           <Link href="/pricing">Pricing</Link>
@@ -64,6 +64,7 @@ const Footer = () => {
           }}
         />
         <input
+          required
           id="email"
           name="email"
           type="email"
