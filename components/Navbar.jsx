@@ -5,13 +5,33 @@ import Link from "next/link";
 import { IoIosMenu } from "react-icons/io";
 import Button from "./ui/Button";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import { navLinks } from "@/constants/navigation";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setMenuIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="relative">
@@ -21,6 +41,7 @@ const Navbar = () => {
           <h1 className="text-2xl font-semibold">Positivus</h1>
         </Link>
         <IoIosMenu
+          ref={buttonRef}
           className="text-3xl ml-auto lg:hidden cursor-pointer"
           onClick={() => setMenuIsOpen(!menuIsOpen)}
         />
@@ -43,7 +64,10 @@ const Navbar = () => {
       </nav>
 
       {menuIsOpen && (
-        <div className="absolute w-full bg-white px-5 py-4 flex flex-col gap-4 drop-shadow-md lg:hidden">
+        <div
+          ref={menuRef}
+          className="absolute w-full bg-white px-5 py-4 flex flex-col gap-4 drop-shadow-md lg:hidden"
+        >
           {navLinks.map((link, index) => (
             <Link
               onClick={() => setMenuIsOpen(false)}
@@ -60,7 +84,7 @@ const Navbar = () => {
           ))}
           <Link
             onClick={() => setMenuIsOpen(false)}
-            className={` px-5 text-center py-3 rounded-lg  flex items-center justify-center bg-white border border-brand-black hover:bg-brand-black hover:text-white cursor-pointer`}
+            className={`px-5 text-center py-3 rounded-lg flex items-center justify-center bg-white border border-brand-black hover:bg-brand-black hover:text-white cursor-pointer`}
             href="/contact"
           >
             Request a quote
