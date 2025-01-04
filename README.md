@@ -99,6 +99,7 @@ This project is deployed on Vercel. The deployment process is automated through 
 - Original design from Figma Community
 - Next.js team for the amazing framework
 - Tailwind CSS team for the utility-first CSS framework
+- Images from [Streamline](https://www.streamlinehq.com/illustrations/bangalore?search=&icon=ico_fMyr4JAXxUeOVjty)
 
 ## 📞 Contact
 
