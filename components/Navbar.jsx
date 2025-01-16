@@ -34,8 +34,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="relative">
-      <nav className="sticky top-0 bg-white py-5 flex w-full justify-between px-5 lg:px-20 drop-shadow-sm z-10">
+    <div className="relative bg-white drop-shadow-sm z-10">
+      <nav className="sticky top-0  py-5 flex w-full justify-between px-5 mx-auto lg:max-w-5xl   ">
         <Link href="/" className="flex gap-3 mr-5 items-center">
           <Image src={logo} alt="logo" width={20} />
           <h1 className="text-2xl font-semibold">Positivus</h1>
